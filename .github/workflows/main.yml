@@ -14,11 +14,11 @@ jobs:
         uses: actions/checkout@v2
 #check
       - name: Install SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa your-gcp-vm-ip >> ~/.ssh/known_hosts
+        # run: |
+        #   mkdir -p ~/.ssh
+        #   echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        #   chmod 600 ~/.ssh/id_rsa
+        #   ssh-keyscan -t rsa your-gcp-vm-ip >> ~/.ssh/known_hosts
 
       - name: Deploy to GCP VM
         run: |

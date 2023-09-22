@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      # hell
 
 jobs:
   deploy:

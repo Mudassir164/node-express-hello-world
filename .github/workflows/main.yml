@@ -23,5 +23,5 @@ jobs:
 
       - name: Deploy to GCP VM
         run: |
-           ssh Mudassir@35.203.62.49 "cd /home/Mudassir/project/node-project/node-express-hello-world && pwd &&  git pull origin master && npm install && pm2 restart node-app"
+           ssh Mudassir@35.203.62.49 "cd /home/Mudassir/project/node-project/node-express-hello-world && pwd &&  git pull origin master && npm install && pm2 restart app.js"
           #ssh Mudassir@35.203.62.49 "cd /home/Mudassir/project/node-project && git pull origin main && npm install && npm run build && pm2 restart your-app-name"
